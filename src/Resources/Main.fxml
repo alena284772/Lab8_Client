@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controls.Main">
+   <left>
+      <VBox prefHeight="373.0" prefWidth="96.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <children>
+            <AnchorPane prefHeight="372.0" prefWidth="107.0">
+               <children>
+                  <Label fx:id="Filter" layoutX="14.0" layoutY="275.0" prefHeight="28.0" prefWidth="56.0" text="Filter:" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="275.0" />
+                  <TextField fx:id="filter" layoutX="-2.0" layoutY="310.0" prefHeight="62.0" prefWidth="116.0" AnchorPane.leftAnchor="-2.0" AnchorPane.topAnchor="310.0" />
+                  <ComboBox fx:id="languages" layoutX="-1.0" layoutY="2.0" prefHeight="27.0" prefWidth="113.0" promptText="Languages" />
+                  <Button fx:id="Info" layoutX="-1.0" layoutY="67.0" mnemonicParsing="false" onAction="#info" prefHeight="25.0" prefWidth="112.0" text="Info" AnchorPane.bottomAnchor="280.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="67.0" />
+                  <Button fx:id="Remove_key" layoutX="1.0" layoutY="98.0" mnemonicParsing="false" onAction="#remove_key" prefHeight="25.0" prefWidth="110.0" text="Remove_key" AnchorPane.bottomAnchor="249.0" AnchorPane.leftAnchor="1.0" />
+                  <Button fx:id="Remove_greater" layoutX="1.0" layoutY="130.0" mnemonicParsing="false" onAction="#remove_greater" prefHeight="25.0" prefWidth="110.0" text="Remove_greater" AnchorPane.leftAnchor="1.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <TableView fx:id="table" onMouseClicked="#open" prefHeight="168.0" prefWidth="890.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </TableView>
+   </bottom>
+   <right>
+      <VBox prefHeight="376.0" prefWidth="192.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox prefHeight="46.0" prefWidth="173.0">
+               <children>
+                  <Button fx:id="Insert" mnemonicParsing="false" onAction="#insert" prefHeight="25.0" prefWidth="90.0" text="Insert">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="History" mnemonicParsing="false" onAction="#history" prefHeight="25.0" prefWidth="84.0" text="History">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="192.0">
+               <children>
+                  <Button fx:id="Show" mnemonicParsing="false" onAction="#show" prefHeight="25.0" prefWidth="90.0" text="Show">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="Clear" mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="82.0" text="Clear">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="39.0" prefWidth="192.0">
+               <children>
+                  <Button fx:id="Update" mnemonicParsing="false" onAction="#update" prefHeight="25.0" prefWidth="92.0" text="Update">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="Help" mnemonicParsing="false" onAction="#help" prefHeight="25.0" prefWidth="92.0" text="Help">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Button fx:id="Replace_if_greater" layoutX="10.0" layoutY="270.0" mnemonicParsing="false" onAction="#replace_if_greater" prefHeight="37.0" prefWidth="182.0" text="Replace_if_greater">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="remove_any" layoutX="10.0" layoutY="295.0" mnemonicParsing="false" onAction="#remove_any" prefHeight="56.0" prefWidth="181.0" text="remove_any_by_number_of_wheels" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="count_less" layoutX="10.0" layoutY="320.0" mnemonicParsing="false" onAction="#count_less" prefHeight="64.0" prefWidth="179.0" text="count_less_than_engine_power" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="print_field" layoutX="10.0" layoutY="258.0" mnemonicParsing="false" onAction="#print" prefHeight="49.0" prefWidth="179.0" text="print_field_ascending_type" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="execute_script" layoutX="10.0" layoutY="307.0" mnemonicParsing="false" onAction="#execute_script" prefHeight="49.0" prefWidth="179.0" text="execute_script" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+   <top>
+      <VBox prefHeight="56.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="User" prefHeight="39.0" prefWidth="804.0" text="User" />
+            <Label fx:id="answer" prefHeight="45.0" prefWidth="902.0" text="Answer" wrapText="true" />
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <AnchorPane prefHeight="429.0" prefWidth="573.0" BorderPane.alignment="CENTER">
+         <children>
+            <Canvas fx:id="canvas" height="384.0" layoutX="23.0" layoutY="11.0" width="550.0" />
+            <Label fx:id="y1" layoutX="-10.0" layoutY="375.0" prefHeight="17.0" prefWidth="43.0" text="1" AnchorPane.topAnchor="375.0" />
+            <Label fx:id="y3" layoutX="-6.0" layoutY="344.0" prefHeight="20.0" prefWidth="32.0" text="1" />
+            <Label fx:id="y19" layoutX="-6.0" layoutY="23.0" prefHeight="20.0" prefWidth="34.0" text="1" />
+            <Label fx:id="y7" layoutX="-7.0" layoutY="265.0" prefHeight="20.0" prefWidth="30.0" text="1" />
+            <Label fx:id="y15" layoutX="-5.0" layoutY="106.0" prefHeight="20.0" prefWidth="32.0" text="1" />
+            <Label fx:id="y17" layoutX="-7.0" layoutY="62.0" prefHeight="20.0" prefWidth="32.0" text="1" />
+            <Label fx:id="y5" layoutX="-8.0" layoutY="304.0" prefHeight="20.0" prefWidth="27.0" text="1" />
+            <Label fx:id="y13" layoutX="-5.0" layoutY="143.0" prefHeight="20.0" prefWidth="30.0" text="1" />
+            <Label fx:id="y11" layoutX="-6.0" layoutY="183.0" prefHeight="20.0" prefWidth="29.0" text="1" />
+            <Label fx:id="y9" layoutX="-6.0" layoutY="225.0" prefHeight="20.0" prefWidth="29.0" text="1" />
+            <Label layoutX="5.0" layoutY="397.0" prefHeight="17.0" prefWidth="41.0" text="1" fx:id="x1" />
+            <Label layoutX="55.0" layoutY="392.0" prefHeight="20.0" prefWidth="33.0" text="1" fx:id="x3" />
+            <Label layoutX="95.0" layoutY="392.0" prefHeight="20.0" prefWidth="32.0" text="1" fx:id="x5" />
+            <Label layoutX="135.0" layoutY="392.0" prefHeight="20.0" prefWidth="35.0" text="1" fx:id="x7" />
+            <Label layoutX="175.0" layoutY="392.0" prefHeight="20.0" prefWidth="32.0" text="1" fx:id="x9" />
+            <Label layoutX="215.0" layoutY="392.0" prefHeight="20.0" prefWidth="33.0" text="1" fx:id="x11" />
+            <Label layoutX="255.0" layoutY="392.0" prefHeight="20.0" prefWidth="35.0" text="1" fx:id="x13" />
+            <Label layoutX="297.0" layoutY="392.0" prefHeight="20.0" prefWidth="35.0" text="1" fx:id="x15" />
+            <Label layoutX="337.0" layoutY="392.0" prefHeight="20.0" prefWidth="34.0" text="1" fx:id="x17" />
+            <Label layoutX="377.0" layoutY="392.0" prefHeight="20.0" prefWidth="33.0" text="1" fx:id="x19" />
+            <Label layoutX="417.0" layoutY="392.0" prefHeight="20.0" prefWidth="35.0" text="1" fx:id="x21" />
+            <Label layoutX="457.0" layoutY="392.0" prefHeight="20.0" prefWidth="36.0" text="1" fx:id="x23" />
+            <Label layoutX="497.0" layoutY="392.0" prefHeight="20.0" prefWidth="36.0" text="1" fx:id="x25" />
+            <Label layoutX="537.0" layoutY="392.0" prefHeight="20.0" prefWidth="35.0" text="1" fx:id="x27" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

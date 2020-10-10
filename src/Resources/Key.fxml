@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controls.Key">
+   <children>
+      <Label fx:id="K" layoutX="47.0" layoutY="72.0" text="Key:" AnchorPane.leftAnchor="47.0" AnchorPane.topAnchor="72.0" />
+      <Label fx:id="ErrorKey" layoutX="131.0" layoutY="93.0" prefHeight="25.0" prefWidth="149.0" AnchorPane.leftAnchor="131.0" AnchorPane.topAnchor="93.0" />
+      <TextField fx:id="key" layoutX="131.0" layoutY="68.0" AnchorPane.leftAnchor="131.0" AnchorPane.topAnchor="68.0" />
+      <Button fx:id="Send" layoutX="129.0" layoutY="140.0" mnemonicParsing="false" onAction="#click" text="Send" AnchorPane.leftAnchor="129.0" AnchorPane.topAnchor="140.0" />
+   </children>
+</AnchorPane>

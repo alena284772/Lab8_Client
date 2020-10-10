@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="700.0" minWidth="550.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controls.Insert">
+    <children>
+        <Label fx:id="name" layoutX="42.0" layoutY="123.0" prefHeight="26.0" prefWidth="112.0" text="Name:" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="123.0" />
+        <TextField fx:id="Name" layoutX="205.0" layoutY="123.0" prefHeight="26.0" prefWidth="260.0" promptText="not null" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="123.0" />
+        <Label fx:id="CX" layoutX="42.0" layoutY="199.0" prefHeight="26.0" prefWidth="112.0" text="Coordinet X:" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="199.0" />
+        <Label fx:id="CY" layoutX="42.0" layoutY="275.0" prefHeight="18.0" prefWidth="112.0" text="Coordinet Y:" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="275.0" />
+        <Label fx:id="EP" layoutX="42.0" layoutY="341.0" prefHeight="18.0" prefWidth="112.0" text="Engine Power:" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="341.0" />
+        <Label fx:id="NOW" layoutX="42.0" layoutY="409.0" prefHeight="18.0" prefWidth="112.0" text="Number of wheels:" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="409.0" />
+        <Label fx:id="type" layoutX="42.0" layoutY="482.0" prefHeight="18.0" prefWidth="112.0" text="Vehicle type:" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="482.0" />
+        <Label fx:id="FType" layoutX="50.0" layoutY="553.0" prefHeight="18.0" prefWidth="112.0" text="Fuel type:" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="553.0" />
+        <Label fx:id="labelErrorName" layoutX="205.0" layoutY="149.0" minHeight="26.0" minWidth="260.0" textFill="RED" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="149.0">
+            <font>
+                <Font size="10.0" />
+            </font></Label>
+        <Label fx:id="labelErrorX" layoutX="205.0" layoutY="225.0" minHeight="26.0" minWidth="260.0" textFill="RED" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="225.0">
+            <font>
+                <Font size="10.0" />
+            </font></Label>
+        <Label fx:id="labelErrorY" layoutX="205.0" layoutY="299.0" minHeight="26.0" minWidth="260.0" textFill="RED" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="299.0">
+            <font>
+                <Font size="10.0" />
+            </font></Label>
+        <Label fx:id="labelErrorEngine" layoutX="205.0" layoutY="363.0" minHeight="26.0" minWidth="260.0" textFill="RED" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="363.0">
+            <font>
+                <Font size="10.0" />
+            </font></Label>
+        <Label fx:id="labelErrorNumber" layoutX="205.0" layoutY="431.0" minHeight="26.0" minWidth="260.0" textFill="RED" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="431.0">
+            <font>
+                <Font size="10.0" />
+            </font></Label>
+        <Label fx:id="labelErrorType" layoutX="205.0" layoutY="504.0" minHeight="26.0" minWidth="260.0" textFill="RED" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="504.0">
+            <font>
+                <Font size="10.0" />
+            </font></Label>
+        <Label fx:id="labelErrorFuel" layoutX="205.0" layoutY="575.0" minHeight="26.0" minWidth="260.0" textFill="RED" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="575.0">
+            <font>
+                <Font size="10.0" />
+            </font></Label>
+        <Button fx:id="buttonCreate" layoutX="216.0" layoutY="638.0" mnemonicParsing="false" onAction="#clickCreate" prefHeight="18.0" prefWidth="112.0" text="Insert" textAlignment="CENTER" textFill="#0f00ff" AnchorPane.leftAnchor="216.0" AnchorPane.topAnchor="638.0" />
+        <TextField fx:id="Engine_Power" layoutX="205.0" layoutY="337.0" prefHeight="26.0" prefWidth="260.0" promptText="&gt;0" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="337.0" />
+        <TextField fx:id="Number" layoutX="205.0" layoutY="405.0" prefHeight="26.0" prefWidth="260.0" promptText="&gt;0" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="405.0" />
+        <TextField fx:id="y" layoutX="205.0" layoutY="271.0" prefHeight="26.0" prefWidth="260.0" promptText="Y &gt;-774" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="271.0" />
+        <TextField layoutX="205.0" layoutY="199.0" prefHeight="26.0" prefWidth="260.0" promptText="X&gt;-815" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="199.0" fx:id="x" />
+        <ComboBox fx:id="Type" layoutX="205.0" layoutY="478.0" prefHeight="26.0" prefWidth="260.0" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="478.0" />
+        <ComboBox fx:id="Fuel" layoutX="205.0" layoutY="549.0" prefHeight="26.0" prefWidth="260.0" />
+        <Label fx:id="K" layoutX="50.0" layoutY="51.0" prefHeight="26.0" prefWidth="112.0" text="Key:" />
+        <TextField fx:id="Key" layoutX="205.0" layoutY="51.0" prefHeight="26.0" prefWidth="260.0" promptText="not null" />
+        <Label fx:id="labelErrorKey" layoutX="205.0" layoutY="77.0" minHeight="26.0" minWidth="260.0" textFill="RED">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
